@@ -13,6 +13,26 @@ To install release candidates run `[sudo] gem install cocoapods --pre`
 ##### Bug Fixes
 
 * None.  
+* Re-implement `dSYM` copying and stripping to avoid duplicate outputs.  
+  [Dimitris Koutsogiorgas](https://github.com/dnkoutso)
+  [#9185](https://github.com/CocoaPods/CocoaPods/issues/9185)  
+
+* When pod target is a static framework, save time by copying compiled resources  
+  [Igor Makarov](https://github.com/igor-makarov)
+  [#9441](https://github.com/CocoaPods/CocoaPods/pull/9441)
+
+* Add support for running tests through the scheme of the app spec host of a test spec    
+  [Eric Amorde](https://github.com/amorde)
+  [#9332](https://github.com/CocoaPods/CocoaPods/issues/9332)
+
+* Fix an issue that prevented variables in test bundle scheme settings from expanding   
+  [Eric Amorde](https://github.com/amorde)
+  [#9539](https://github.com/CocoaPods/CocoaPods/pull/9539)
+
+* Fix project path handling issue that caused cmake projects to be incorrect  
+  [Paul Beusterien](https://github.com/paulb777)
+  [Andrew](https://github.com/mad-rain)
+  [#6268](https://github.com/CocoaPods/CocoaPods/pull/6268)
 
 
 ## 1.9.1 (2020-03-09)
