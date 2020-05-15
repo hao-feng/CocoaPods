@@ -290,8 +290,9 @@ module Pod
               resource_paths = resource_paths.map do |resource_path|
                 extname = File.extname(resource_path)
                 if self.class.resource_extension_compilable?(extname)
+                  basename = extname == '.xcassets' ? 'Assets' : File.basename(resource_path)
                   output_extname = self.class.output_extension_for_resource(extname)
-                  built_product_dir.join(File.basename(resource_path, extname)).sub_ext(output_extname).to_s
+                  built_product_dir.join(basename).sub_ext(output_extname).to_s
                 else
                   resource_path
                 end

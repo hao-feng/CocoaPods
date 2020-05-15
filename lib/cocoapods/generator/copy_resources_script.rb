@@ -156,10 +156,11 @@ install_resource()
     RESOURCE_PATH="${PODS_ROOT}/$1"
   fi
   if [[ ! -e "$RESOURCE_PATH" ]] ; then
-    cat << EOM
-error: Resource "$RESOURCE_PATH" not found. Run 'pod install' to update the copy resources script.
-EOM
-    exit 1
+#     cat << EOM
+# error: Resource "$RESOURCE_PATH" not found. Run 'pod install' to update the copy resources script.
+# EOM
+#     exit 1
+    exit 0
   fi
   case $RESOURCE_PATH in
     *\.storyboard)
