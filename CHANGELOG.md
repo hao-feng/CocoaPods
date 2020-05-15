@@ -75,6 +75,10 @@ To install release candidates run `[sudo] gem install cocoapods --pre`
   [Dimitris Koutsogiorgas](https://github.com/dnkoutso)
   [#9185](https://github.com/CocoaPods/CocoaPods/issues/9185)  
 
+* When pod target is a static framework, save time by copying compiled resources  
+  [Igor Makarov](https://github.com/igor-makarov)
+  [#9441](https://github.com/CocoaPods/CocoaPods/pull/9441)
+
 * Add support for running tests through the scheme of the app spec host of a test spec    
   [Eric Amorde](https://github.com/amorde)
   [#9332](https://github.com/CocoaPods/CocoaPods/issues/9332)
